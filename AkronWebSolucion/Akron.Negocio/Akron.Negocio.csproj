@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,10 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home\HomeNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Home\" />
+    <ProjectReference Include="..\Akron.BaseDatos\Akron.BaseDatos.csproj">
+      <Project>{3eaad015-d70d-46dd-8f06-7f7a6147da7a}</Project>
+      <Name>Akron.BaseDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Akron.Entidades\Akron.Entidades.csproj">
+      <Project>{3ce067a0-ad85-4ac0-b9f1-4e81a30ac480}</Project>
+      <Name>Akron.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

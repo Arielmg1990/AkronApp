@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AkronModelStoreContainer" CdmEntityContainer="AkronEntities">
+    <EntitySetMapping Name="Productos">
+      <EntityTypeMapping TypeName="AkronModel.Producto">
+        <MappingFragment StoreEntitySet="Productos">
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="ProductoCodigo" ColumnName="ProductoCodigo" />
+          <ScalarProperty Name="ProductoNombre" ColumnName="ProductoNombre" />
+          <ScalarProperty Name="ProductoDescripcion" ColumnName="ProductoDescripcion" />
+          <ScalarProperty Name="ProductoPropBene" ColumnName="ProductoPropBene" />
+          <ScalarProperty Name="ProductoEspecificacion" ColumnName="ProductoEspecificacion" />
+          <ScalarProperty Name="ProductoRecomUso" ColumnName="ProductoRecomUso" />
+          <ScalarProperty Name="ProductoCaracteristicas" ColumnName="ProductoCaracteristicas" />
+          <ScalarProperty Name="ProductoDisponible" ColumnName="ProductoDisponible" />
+          <ScalarProperty Name="ProductoImagen" ColumnName="ProductoImagen" />
+          <ScalarProperty Name="ProductoImagenFolleto" ColumnName="ProductoImagenFolleto" />
+          <ScalarProperty Name="ProductoFichaTecnica" ColumnName="ProductoFichaTecnica" />
+          <ScalarProperty Name="ProductoHojaseguridad" ColumnName="ProductoHojaseguridad" />
+          <ScalarProperty Name="ProductoTestimonial" ColumnName="ProductoTestimonial" />
+          <ScalarProperty Name="ProductoCertificacion" ColumnName="ProductoCertificacion" />
+          <ScalarProperty Name="ProductoMarca" ColumnName="ProductoMarca" />
+          <ScalarProperty Name="ProductoStatus" ColumnName="ProductoStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

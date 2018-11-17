@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AkronModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="ProductoId" />
+    </Key>
+    <Property Name="ProductoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductoCodigo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProductoNombre" Type="varchar" MaxLength="800" Nullable="false" />
+    <Property Name="ProductoDescripcion" Type="varchar(max)" Nullable="false" />
+    <Property Name="ProductoPropBene" Type="varchar(max)" Nullable="false" />
+    <Property Name="ProductoEspecificacion" Type="varchar(max)" Nullable="false" />
+    <Property Name="ProductoRecomUso" Type="varchar(max)" Nullable="false" />
+    <Property Name="ProductoCaracteristicas" Type="varchar(max)" Nullable="false" />
+    <Property Name="ProductoDisponible" Type="text" Nullable="false" />
+    <Property Name="ProductoImagen" Type="varchar" MaxLength="500" />
+    <Property Name="ProductoImagenFolleto" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProductoFichaTecnica" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProductoHojaseguridad" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProductoTestimonial" Type="varchar" MaxLength="500" />
+    <Property Name="ProductoCertificacion" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProductoMarca" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="ProductoStatus" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AkronModelStoreContainer">
+    <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

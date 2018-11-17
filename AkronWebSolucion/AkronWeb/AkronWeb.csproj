@@ -186,6 +186,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Akron.Entidades\Akron.Entidades.csproj">
+      <Project>{3ce067a0-ad85-4ac0-b9f1-4e81a30ac480}</Project>
+      <Name>Akron.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Akron.Negocio\Akron.Negocio.csproj">
+      <Project>{27b30e0d-6fe4-420c-92be-c3d173bb2374}</Project>
+      <Name>Akron.Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

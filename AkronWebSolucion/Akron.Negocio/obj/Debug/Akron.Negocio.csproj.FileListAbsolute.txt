@@ -1,0 +1,13 @@
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.Negocio.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.Negocio.pdb
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.BaseDatos.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.Entidades.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.BaseDatos.pdb
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.BaseDatos.dll.config
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\Akron.Entidades.pdb
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\bin\Debug\EntityFramework.xml
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\obj\Debug\Akron.Negocio.csprojAssemblyReference.cache
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\obj\Debug\Akron.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\obj\Debug\Akron.Negocio.csproj.CopyComplete
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\obj\Debug\Akron.Negocio.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Negocio\obj\Debug\Akron.Negocio.pdb

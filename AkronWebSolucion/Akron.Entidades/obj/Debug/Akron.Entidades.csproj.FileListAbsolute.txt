@@ -1,0 +1,5 @@
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Entidades\bin\Debug\Akron.Entidades.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Entidades\bin\Debug\Akron.Entidades.pdb
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Entidades\obj\Debug\Akron.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Entidades\obj\Debug\Akron.Entidades.dll
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.Entidades\obj\Debug\Akron.Entidades.pdb
