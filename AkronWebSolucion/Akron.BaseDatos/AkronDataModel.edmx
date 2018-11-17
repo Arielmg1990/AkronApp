@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AkronModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Productos">
+          <Key>
+            <PropertyRef Name="ProductoId" />
+          </Key>
+          <Property Name="ProductoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductoCodigo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ProductoNombre" Type="varchar" MaxLength="800" Nullable="false" />
+          <Property Name="ProductoDescripcion" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProductoPropBene" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProductoEspecificacion" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProductoRecomUso" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProductoCaracteristicas" Type="varchar(max)" Nullable="false" />
+          <Property Name="ProductoDisponible" Type="text" Nullable="false" />
+          <Property Name="ProductoImagen" Type="varchar" MaxLength="500" />
+          <Property Name="ProductoImagenFolleto" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="ProductoFichaTecnica" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="ProductoHojaseguridad" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="ProductoTestimonial" Type="varchar" MaxLength="500" />
+          <Property Name="ProductoCertificacion" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="ProductoMarca" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="ProductoStatus" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AkronModelStoreContainer">
+          <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AkronModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Producto">
+          <Key>
+            <PropertyRef Name="ProductoId" />
+          </Key>
+          <Property Name="ProductoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductoCodigo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoNombre" Type="String" MaxLength="800" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoDescripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoPropBene" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoEspecificacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoRecomUso" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoCaracteristicas" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoDisponible" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoImagen" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ProductoImagenFolleto" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoFichaTecnica" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoHojaseguridad" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoTestimonial" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ProductoCertificacion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoMarca" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ProductoStatus" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AkronEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Productos" EntityType="Self.Producto" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AkronModelStoreContainer" CdmEntityContainer="AkronEntities">
+          <EntitySetMapping Name="Productos">
+            <EntityTypeMapping TypeName="AkronModel.Producto">
+              <MappingFragment StoreEntitySet="Productos">
+                <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+                <ScalarProperty Name="ProductoCodigo" ColumnName="ProductoCodigo" />
+                <ScalarProperty Name="ProductoNombre" ColumnName="ProductoNombre" />
+                <ScalarProperty Name="ProductoDescripcion" ColumnName="ProductoDescripcion" />
+                <ScalarProperty Name="ProductoPropBene" ColumnName="ProductoPropBene" />
+                <ScalarProperty Name="ProductoEspecificacion" ColumnName="ProductoEspecificacion" />
+                <ScalarProperty Name="ProductoRecomUso" ColumnName="ProductoRecomUso" />
+                <ScalarProperty Name="ProductoCaracteristicas" ColumnName="ProductoCaracteristicas" />
+                <ScalarProperty Name="ProductoDisponible" ColumnName="ProductoDisponible" />
+                <ScalarProperty Name="ProductoImagen" ColumnName="ProductoImagen" />
+                <ScalarProperty Name="ProductoImagenFolleto" ColumnName="ProductoImagenFolleto" />
+                <ScalarProperty Name="ProductoFichaTecnica" ColumnName="ProductoFichaTecnica" />
+                <ScalarProperty Name="ProductoHojaseguridad" ColumnName="ProductoHojaseguridad" />
+                <ScalarProperty Name="ProductoTestimonial" ColumnName="ProductoTestimonial" />
+                <ScalarProperty Name="ProductoCertificacion" ColumnName="ProductoCertificacion" />
+                <ScalarProperty Name="ProductoMarca" ColumnName="ProductoMarca" />
+                <ScalarProperty Name="ProductoStatus" ColumnName="ProductoStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
