@@ -93,4 +93,3 @@ C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\AkronWeb\bin\Akron.BaseDat
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\AkronWeb\bin\EntityFramework.dll
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\AkronWeb\bin\Akron.BaseDatos.pdb
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\AkronWeb\bin\Akron.BaseDatos.dll.config
-C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\AkronWeb\bin\EntityFramework.xml

@@ -7,3 +7,4 @@ C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.BaseDatos\obj\Debug\
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.BaseDatos\obj\Debug\Akron.BaseDatos.csproj.CopyComplete
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.BaseDatos\obj\Debug\Akron.BaseDatos.dll
 C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.BaseDatos\obj\Debug\Akron.BaseDatos.pdb
+C:\Users\ariel\Source\Repos\AkronApp\AkronWebSolucion\Akron.BaseDatos\obj\Debug\Akron.BaseDatos.csprojAssemblyReference.cache

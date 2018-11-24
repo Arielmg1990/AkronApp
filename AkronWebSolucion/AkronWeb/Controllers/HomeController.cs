@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Akron.Negocio;
 using Akron.Negocio.Home;
-
 namespace AkronWeb.Controllers
 {
     public class HomeController : Controller
@@ -12,8 +12,11 @@ namespace AkronWeb.Controllers
         public ActionResult Index()
         {
             // Instaniamos la capa Negocio
-            var _negocio = new HomeNegocio();
-            ViewBag.Demo = _negocio.TestDemo();
+            var _homeNegocio = new HomeNegocio();
+            // Obtenemos los productos NUEVOS y DESTACADOS
+            ViewBag.Productosnuevos = _homeNegocio.ObtenerProductosNuevos();
+            ViewBag.ProductosDestacados = _homeNegocio.ObtenerProductosDestacados();
+
             return View();
         }
 
